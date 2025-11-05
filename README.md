@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🚀 CareerPulse AI: Intelligent Resume Analysis Platform
 
-## Getting Started
+**CareerPulse AI** is an advanced, AI-powered platform designed to provide deep intelligence and actionable insights from resumes using cutting-edge Natural Language Processing (NLP) and Machine Learning techniques.
 
-First, run the development server:
+It helps users, recruiters, and candidates to analyze, score, and optimize resumes by identifying key skills, extracting crucial data, and suggesting tailored improvements.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Transformer-based NLP:** Utilizes advanced models for deep textual understanding of resume content.
+- **Named Entity Recognition (NER):** Accurately extracts critical entities like skills, experience, education, and contact information.
+- **ML Scoring Algorithm:** Provides a comprehensive **resume score** based on relevance and quality metrics.
+- **Job Classification:** Automatically categorizes the resume to the most relevant job roles.
+- **Skill Gap Analysis:** Suggests skill improvements tailored to the target industry or role.
+- **Modern Web Interface:** Built with Next.js for a fast, responsive, and dynamic user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+CareerPulse AI is built on a powerful MERN stack foundation integrated with a robust Python-based Machine Learning layer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Component            | Technologies Used                                           |
+| :------------------- | :---------------------------------------------------------- |
+| **Frontend**         | **Next.js**, React, **Tailwind CSS**, ShadCN, Framer Motion |
+| **Backend / API**    | **Node.js**, Express.js                                     |
+| **Machine Learning** | **Python**, Transformers, SpaCy (for NER), Scikit-learn     |
+| **Database**         | MongoDB                                                     |
+| **Cloud / Storage**  | AWS S3 (for resume file storage)                            |
+| **Deployment**       | Vercel (Frontend), AWS EC2/Digital Ocean (Backend/ML)       |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 👥 Team Members
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project was a collaborative effort by:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Name                 | Role               | Contact                                               |
+| :------------------- | :----------------- | :---------------------------------------------------- |
+| **Priyanshu Saha**   | Team Leader        | [LinkedIn](https://lnkd.in/gHNb-yux)                  |
+| **Yash Pandey** (Me) | AI/Full-Stack Lead | [LinkedIn](https://www.linkedin.com/in/yashpandey29/) |
+| **Divyam Jain**      | Developer          | [LinkedIn](https://lnkd.in/gQt3dvhE)                  |
+
+---
+
+## 🔗 Getting Started
+
+### Prerequisites
+
+You need the following installed:
+
+- Node.js (v18+)
+- Python (v3.9+)
+- MongoDB Instance
+- AWS S3 Account (for file uploads)
+
+---
+
+## 🎥 Project Demo
+
+Check out a full walkthrough and demonstration of CareerPulse AI's features:
+
+▶️ **[Watch the Project Demo on YouTube](https://youtu.be/GyqG2U8PMH0)**
