@@ -98,7 +98,8 @@ export default function CareerPulse() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="p-1.5 rounded-3xl bg-gradient-to-br from-sky-500 to-indigo-500"
+            // 💡 Consistency Change: Changed 'to-indigo-500' to 'to-sky-700'
+            className="p-1.5 rounded-3xl bg-gradient-to-br from-sky-500 to-sky-700"
           >
             <Image
               src="https://res.cloudinary.com/dah7l8utl/image/upload/v1758434713/IMG_20250719_212736_n6jbuo.jpg"
@@ -146,7 +147,7 @@ export default function CareerPulse() {
                   alt="LeetCode"
                   width={30}
                   height={30}
-                  className="opacity-70 hover:opacity-100 transition filter invert brightness-0 saturate-100 invert-0"
+                  className="opacity-80 hover:opacity-100 transition mix-blend-difference"
                 />
               </Link>
             </div>
@@ -168,6 +169,7 @@ export default function CareerPulse() {
       >
         <motion.h3
           variants={itemVariants}
+          // This heading style is the reference for all other headings
           className="text-3xl md:text-4xl font-bold mb-3 text-sky-400 border-b border-sky-400/30 pb-2 inline-block"
         >
           CareerPulse AI – Minor Project
@@ -242,6 +244,87 @@ export default function CareerPulse() {
       {/* --- Section Separator --- */}
       <div className="max-w-6xl mx-auto h-px bg-white/10 my-16" />
 
+      {/* ======================= Research Paper Acceptance ======================= */}
+      <motion.section
+        id="research-paper"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={containerVariants}
+        className="max-w-7xl mx-auto px-6 py-10"
+      >
+        <motion.h3
+          variants={itemVariants}
+          // Added consistent heading style
+          className="text-3xl md:text-4xl font-bold mb-3 text-sky-400 border-b border-sky-400/30 pb-2 inline-block"
+        >
+          CareerPulse AI — Research Paper Accepted 🎉
+        </motion.h3>
+
+        <motion.p
+          variants={itemVariants}
+          className="text-gray-300 mt-4 text-lg max-w-4xl"
+        >
+          Our research paper{" "}
+          <span className="text-sky-400 font-semibold">
+            “CareerPulse AI: A Transformer-Based Intelligent Resume Analysis and
+            Career Guidance System”
+          </span>{" "}
+          has been officially accepted by the
+          <span className="text-sky-400">
+            {" "}
+            International Journal for Research Trends and Innovation (IJRTI)
+          </span>
+          . After clearing peer review and plagiarism checks with a 95%
+          uniqueness score, the paper is now moving to the final publication
+          stage.
+        </motion.p>
+
+        {/* Centered Clean Card */}
+        <motion.div
+          variants={itemVariants}
+          className="mt-10 bg-white/5 rounded-2xl p-8 border border-white/10 
+                backdrop-blur-md shadow-lg hover:border-sky-500/40 transition-all"
+        >
+          <h4 className="text-sky-400 font-extrabold text-2xl mb-4 flex items-center gap-2">
+            📄 Acceptance Confirmation
+          </h4>
+
+          {/* Fixed Image Container */}
+          <div className="w-full flex justify-center">
+            <div className="relative w-full max-w-xl rounded-xl overflow-hidden border border-white/10 shadow-md">
+              <Image
+                src="/Acceptance-Screenshot.png"
+                alt="Acceptance Letter Screenshot"
+                width={900}
+                height={700}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
+
+          <p className="text-gray-300 text-base mt-4">
+            Official acceptance screenshot confirming the successful approval of
+            CareerPulse AI’s research publication.
+          </p>
+
+          {/* Premium Button */}
+          <Link
+            href="https://drive.google.com/drive/folders/1CpbHyKQ3Od628MisABIE-3oGBFfOdnQ3?usp=sharing"
+            target="_blank"
+            className="mt-6 inline-flex items-center gap-2 px-5 py-3 bg-sky-500/10 
+                  border border-sky-500/40 rounded-xl text-sky-300 font-semibold
+                  hover:bg-sky-500/20 hover:border-sky-500/80 transition-all 
+                  shadow-md hover:shadow-sky-500/40 backdrop-blur-sm"
+          >
+            <span className="text-xl">📘</span> Download Research Paper
+          </Link>
+        </motion.div>
+      </motion.section>
+
+      {/* --- Section Separator --- */}
+      <div className="max-w-6xl mx-auto h-px bg-white/10 my-16" />
+
       {/* ✅ TEAM SECTION */}
       <motion.section
         id="team"
@@ -253,21 +336,24 @@ export default function CareerPulse() {
       >
         <motion.h3
           variants={itemVariants}
-          className="text-3xl md:text-4xl font-bold text-sky-400 mb-8"
+          // 💡 Consistency Change: Added consistent heading style
+          className="text-3xl md:text-4xl font-bold mb-3 text-sky-400 border-b border-sky-400/30 pb-2 inline-block"
         >
           Team Members
         </motion.h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          {/* Added mt-8 for spacing after the new heading style */}
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
               whileHover={{
-                scale: 1.03, // Slight reduction from 1.05 for team members as they are smaller cards
+                scale: 1.03,
                 boxShadow: "0 0 20px rgba(56, 189, 248, 0.5)",
               }}
               transition={{ duration: 0.3 }}
-              className="bg-white/5 border border-white/10 p-6 rounded-2xl text-center transition-all duration-300 flex flex-col items-center"
+              // 💡 Consistency Change: Added hover:border-sky-500/50 to match other cards
+              className="bg-white/5 border border-white/10 p-6 rounded-2xl text-center transition-all duration-300 flex flex-col items-center hover:border-sky-500/50"
             >
               {/* Profile Image with consistent size and circular shape */}
               <div className="mb-4 p-1 rounded-full border-2 border-sky-400">
@@ -314,12 +400,14 @@ export default function CareerPulse() {
       >
         <motion.h3
           variants={itemVariants}
-          className="text-3xl md:text-4xl font-bold text-sky-400 mb-8"
+          // 💡 Consistency Change: Added consistent heading style
+          className="text-3xl md:text-4xl font-bold mb-3 text-sky-400 border-b border-sky-400/30 pb-2 inline-block"
         >
           Project Gallery / Screenshots
         </motion.h3>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
+          {/* Added mt-8 for spacing after the new heading style */}
           {images.map((img, index) => (
             <motion.div
               key={img.url}
@@ -327,9 +415,10 @@ export default function CareerPulse() {
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 0 20px rgba(56, 189, 248, 0.5)",
-              }} // Subtle blue glow on hover
+              }}
               transition={{ duration: 0.3 }}
-              className="group bg-white/5 border border-white/10 rounded-xl overflow-hidden cursor-pointer transform hover:z-10"
+              // 💡 Consistency Change: Added hover:border-sky-500/50 to match other cards
+              className="group bg-white/5 border border-white/10 rounded-xl overflow-hidden cursor-pointer transform hover:z-10 hover:border-sky-500/50"
             >
               {/* Use the Link component to wrap the content and enable click functionality */}
               <Link
